@@ -10,13 +10,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #202225;
+      background: #3b3b3b;
       color: white;
       text-align: center;
     }
 
     .container {
-      margin-top: 100px;
+      margin-top: 80px;
     }
 
     h1 {
@@ -25,14 +25,17 @@
 
     p {
       font-size: 20px;
-      color: #cccccc;
+    }
+
+    .buttons {
+      width: 300px;
+      margin: 30px auto;
     }
 
     .button {
       display: block;
-      width: 280px;
-      margin: 20px auto;
       padding: 20px;
+      margin-bottom: 15px;
       font-size: 20px;
       text-decoration: none;
       color: white;
@@ -42,6 +45,18 @@
 
     .button:hover {
       opacity: 0.8;
+    }
+
+    .apply-button {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      padding: 18px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
+      background: #5865F2;
     }
   </style>
 </head>
@@ -54,27 +69,29 @@
 
     <p>Вы попали на сайт Art_Vedio_2017_15</p>
 
-    <p>Выберите нужный раздел:</p>
+    <div class="buttons">
 
-    <a class="button"
-       href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
-       target="_blank">
-       ▶️ Art_Vedio_2017_15
-    </a>
+      <a class="button"
+         href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
+         target="_blank">
+         ▶️ Art_Vedio_2017_15
+      </a>
 
-    <a class="button"
-       href="https://www.donationalerts.com/r/art9vedio9official"
-       target="_blank">
-       💰 Пожертвовать
-    </a>
+      <a class="button"
+         href="https://www.donationalerts.com/r/art9vedio9official"
+         target="_blank">
+         💰 Пожертвовать
+      </a>
 
-    <a class="button"
-       href="https://discord.gg/RGjsDS7Ra"
-       target="_blank">
-       🤝 Подать заявку
-    </a>
+    </div>
 
   </div>
+
+  <a class="apply-button"
+     href="https://discord.gg/RGjsDS7Ra"
+     target="_blank">
+     🤝 Подать заявку
+  </a>
 
 </body>
 </html>
