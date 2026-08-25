@@ -14,39 +14,20 @@
         body {
             margin: 0;
             min-height: 100vh;
-            overflow-x: hidden;
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
 
-            background: linear-gradient(
-                120deg,
-                #090d1f,
-                #1b1235,
-                #102b45,
-                #25113d
-            );
-
-            background-size: 400% 400%;
-            animation: backgroundMove 12s ease infinite;
-        }
-
-        @keyframes backgroundMove {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            background-image: url("image (1).jpeg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         .container {
+            min-height: 100vh;
             padding: 70px 20px;
+            background: rgba(10, 10, 20, 0.45);
         }
 
         h1 {
@@ -61,7 +42,7 @@
 
         .button {
             display: inline-block;
-            width: 280px;
+            width: 300px;
             padding: 18px;
             margin: 15px;
 
@@ -81,7 +62,6 @@
 
         .button:hover {
             transform: translateY(-5px) scale(1.03);
-
             box-shadow: 0 15px 35px rgba(130, 90, 255, 0.7);
         }
 
@@ -113,7 +93,6 @@
             если подадите заявку на сотрудничество.
         </p>
 
-        <!-- Кнопка YouTube -->
         <a class="button youtube-button"
            href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
            target="_blank">
@@ -122,14 +101,12 @@
 
         <div class="buttons-row">
 
-            <!-- Discord -->
             <a class="button"
                href="https://discord.gg/RGjsDS7Ra"
                target="_blank">
-         🤝 Подать заявку на сотрудничество
+                🤝 Подать заявку на сотрудничество
             </a>
 
-            <!-- DonationAlerts -->
             <a class="button"
                href="https://www.donationalerts.com/r/art9vedio9official"
                target="_blank">
