@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Art_Vedio_2017_15</title>
 
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-            min-height: 100vh;
-            overflow-x: hidden;
             font-family: Arial, sans-serif;
+            min-height: 100vh;
             color: white;
-            text-align: center;
+            overflow-x: hidden;
 
             background: linear-gradient(
-                120deg,
-                #090d1f,
-                #1b1235,
-                #102b45,
-                #25113d
+                135deg,
+                #0b1020,
+                #17122b,
+                #071d2b,
+                #1a1026
             );
 
             background-size: 400% 400%;
@@ -46,56 +45,80 @@
         }
 
         .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
             padding: 70px 20px;
         }
 
         h1 {
-            font-size: 38px;
-            text-shadow: 0 0 20px rgba(120, 100, 255, 0.8);
+            font-size: 42px;
+            margin-bottom: 20px;
         }
 
         p {
             font-size: 20px;
-            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #d8d8e8;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
         }
 
         .button {
             display: inline-block;
             width: 280px;
-            padding: 18px;
-            margin: 15px;
-
-            background: linear-gradient(135deg, #5865f2, #8b5cf6);
-            color: white;
-
+            padding: 16px;
+            border-radius: 12px;
             text-decoration: none;
-            border-radius: 15px;
-
+            color: white;
             font-size: 18px;
-            font-weight: bold;
-
-            box-shadow: 0 8px 25px rgba(80, 80, 255, 0.35);
-
+            background: linear-gradient(135deg, #4e5bd5, #7b3fe4);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
             transition: 0.3s;
         }
 
         .button:hover {
-            transform: translateY(-5px) scale(1.03);
-
-            box-shadow: 0 15px 35px rgba(130, 90, 255, 0.7);
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 10px 30px rgba(100, 80, 255, 0.5);
         }
 
-        .youtube-button {
-            display: block;
-            margin: 30px auto;
+        .donate {
+            background: linear-gradient(135deg, #c97800, #e69b00);
         }
 
-        .buttons-row {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 20px;
-            flex-wrap: wrap;
+        .apply {
+            background: linear-gradient(135deg, #16844a, #24b867);
+        }
+
+        .bottom-left {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+        }
+
+        .bottom-left .button {
+            width: auto;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .button {
+                width: 100%;
+                max-width: 280px;
+            }
         }
     </style>
 </head>
@@ -106,37 +129,45 @@
 
         <h1>Здравствуйте!</h1>
 
-        <p>Вы попали на сайт Art_Vedio_2017_15</p>
-
         <p>
-            Вы сможете продвинуть Art_Vedio,<br>
-            если подадите заявку на сотрудничество.
+            Вы попали на сайт Art_Vedio_2017_15
         </p>
 
-        <!-- Кнопка YouTube -->
-        <a class="button youtube-button"
-           href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
-           target="_blank">
-            ▶️ Канал Art_Vedio_2017_15
-        </a>
+        <p>
+            Вы сможете продвинуть Art_Vedio, если подадите заявку на сотрудничество.
+        </p>
 
-        <div class="buttons-row">
+        <div class="buttons">
 
-            <!-- Discord -->
-            <a class="button"
-               href="https://discord.gg/RGjsDS7Ra"
-               target="_blank">
-                🤝 Подать заявку
+            <a
+                href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
+                class="button"
+                target="_blank"
+            >
+                ▶ Art_Vedio_2017_15
             </a>
 
-            <!-- DonationAlerts -->
-            <a class="button"
-               href="https://www.donationalerts.com/r/art9vedio9official"
-               target="_blank">
-        🤝 Подать заявку на сотрудничество
+            <a
+                href="https://www.donationalerts.com/r/art9vedio9official"
+                class="button donate"
+                target="_blank"
+            >
+                💰 Пожертвовать
             </a>
 
         </div>
+
+    </div>
+
+    <div class="bottom-left">
+
+        <a
+            href="https://discord.gg/RGjsDS7Ra"
+            class="button apply"
+            target="_blank"
+        >
+            🤝 Подать заявку на сотрудничество
+        </a>
 
     </div>
 
