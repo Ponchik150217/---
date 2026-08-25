@@ -1,131 +1,145 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Art_Vedio_2017_15</title>
+    <title>Art_Vedio_2017_15</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
+            background-image:
+                linear-gradient(rgba(10, 10, 20, 0.55),
+                rgba(10, 10, 20, 0.75)),
+                url("fon.png");
 
-      background:
-        radial-gradient(circle at top left, #313b5c 0%, transparent 35%),
-        radial-gradient(circle at bottom right, #332451 0%, transparent 35%),
-        linear-gradient(135deg, #15171f, #252936, #181923);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
 
-      background-attachment: fixed;
-    }
+            font-family: Arial, sans-serif;
+            color: white;
+        }
 
-    .container {
-      padding-top: 70px;
-      width: 100%;
-    }
+        .container {
+            text-align: center;
+            padding-top: 70px;
+        }
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
-      text-shadow: 0 0 20px rgba(120, 100, 255, 0.4);
-    }
+        h1 {
+            font-size: 38px;
+        }
 
-    p {
-      font-size: 20px;
-      color: #d0d2dc;
-      margin-bottom: 30px;
-    }
+        p {
+            font-size: 20px;
+        }
 
-    .button {
-      display: inline-block;
-      width: 300px;
-      padding: 20px;
-      margin: 15px;
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-      border-radius: 12px;
+        .buttons {
+            margin-top: 30px;
+        }
 
-      background: linear-gradient(135deg, #5865f2, #7b61ff);
+        .button {
+            display: block;
+            width: 260px;
+            margin: 12px auto;
+            padding: 16px;
 
-      box-shadow: 0 8px 25px rgba(88, 101, 242, 0.3);
+            background: #5366d8;
+            color: white;
 
-      transition: 0.2s;
-    }
+            text-decoration: none;
+            border-radius: 12px;
 
-    .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 30px rgba(88, 101, 242, 0.5);
-    }
+            font-size: 18px;
+        }
 
-    .youtube-button {
-      display: block;
-      margin: 20px auto;
-    }
+        .button:hover {
+            background: #6d7eff;
+        }
 
-    .buttons-row {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
+        .apply {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+        }
 
-    .donate-button {
-      background: linear-gradient(135deg, #167a72, #249c8d);
-      box-shadow: 0 8px 25px rgba(36, 156, 141, 0.25);
-    }
+        .apply a {
+            display: block;
+            padding: 16px 25px;
 
-    .donate-button:hover {
-      box-shadow: 0 12px 30px rgba(36, 156, 141, 0.5);
-    }
-  </style>
+            background: #5366d8;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 12px;
+
+            font-size: 18px;
+        }
+
+        .donate {
+            position: fixed;
+            right: 20px;
+            top: 245px;
+        }
+
+        .donate a {
+            display: block;
+            padding: 16px 25px;
+
+            background: #5366d8;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 12px;
+
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="container">
 
-    <h1>Здравствуйте!</h1>
+        <h1>Здравствуйте!</h1>
 
-    <p>Вы попали на сайт Art_Vedio_2017_15 Вы сможете продвинуть Art_Vedio если подадите зайявку на содрудничество</p>
+        <p>Вы попали на сайт Art_Vedio_2017_15</p>
 
-    <!-- Кнопка YouTube -->
-    <a class="button youtube-button"
-       href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
-       target="_blank">
-      ▶️ Канал Art_Vedio_2017_15
-    </a>
+        <h2>Канал Art_Vedio_2017_15</h2>
 
-    <!-- Здесь позже можно добавить ещё одну кнопку -->
+        <p>
+            Вы сможете продвинуть Art_Vedio,
+            если подадите заявку на сотрудничество.
+        </p>
 
-    <div class="buttons-row">
+        <div class="buttons">
 
-      <!-- Подать заявку -->
-      <a class="button"
-         href="https://discord.gg/RGjsDS7Ra"
-         target="_blank">
-        🤝 Подать заявку на содрудничество
-      </a>
+            <a class="button"
+               href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
+               target="_blank">
+                ▶️ Art_Vedio_2017_15
+            </a>
 
-      <!-- Пожертвовать -->
-      <a class="button donate-button"
-         href="https://www.donationalerts.com/r/art9vedio9official"
-         target="_blank">
-        💰 Пожертвовать
-      </a>
+        </div>
 
     </div>
 
-  </div>
+    <div class="donate">
+        <a href="https://www.donationalerts.com/r/art9vedio9official"
+           target="_blank">
+            💰 Пожертвовать
+        </a>
+    </div>
+
+    <div class="apply">
+        <a href="https://discord.gg/RGjsDS7Ra"
+           target="_blank">
+            🤝 Подать заявку
+        </a>
+    </div>
 
 </body>
 </html>
