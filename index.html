@@ -14,6 +14,7 @@
         body {
             margin: 0;
             min-height: 100vh;
+            overflow-x: hidden;
             font-family: Arial, sans-serif;
             color: white;
             text-align: center;
@@ -48,13 +49,6 @@
             padding: 70px 20px;
         }
 
-        .site-image {
-            width: 200px;
-            max-width: 90%;
-            border-radius: 15px;
-            margin-bottom: 25px;
-        }
-
         h1 {
             font-size: 38px;
             text-shadow: 0 0 20px rgba(120, 100, 255, 0.8);
@@ -67,12 +61,13 @@
 
         .button {
             display: inline-block;
-            width: 300px;
+            width: 280px;
             padding: 18px;
             margin: 15px;
 
             background: linear-gradient(135deg, #5865f2, #8b5cf6);
             color: white;
+
             text-decoration: none;
             border-radius: 15px;
 
@@ -80,11 +75,13 @@
             font-weight: bold;
 
             box-shadow: 0 8px 25px rgba(80, 80, 255, 0.35);
+
             transition: 0.3s;
         }
 
         .button:hover {
             transform: translateY(-5px) scale(1.03);
+
             box-shadow: 0 15px 35px rgba(130, 90, 255, 0.7);
         }
 
@@ -107,10 +104,6 @@
 
     <div class="container">
 
-        <img src="image (1).jpeg"
-             alt="Art_Vedio_2017_15"
-             class="site-image">
-
         <h1>Здравствуйте!</h1>
 
         <p>Вы попали на сайт Art_Vedio_2017_15</p>
@@ -120,6 +113,7 @@
             если подадите заявку на сотрудничество.
         </p>
 
+        <!-- Кнопка YouTube -->
         <a class="button youtube-button"
            href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
            target="_blank">
@@ -128,12 +122,14 @@
 
         <div class="buttons-row">
 
+            <!-- Discord -->
             <a class="button"
                href="https://discord.gg/RGjsDS7Ra"
                target="_blank">
-                🤝 Подать заявку на сотрудничество
+                🤝 Подать заявку
             </a>
 
+            <!-- DonationAlerts -->
             <a class="button"
                href="https://www.donationalerts.com/r/art9vedio9official"
                target="_blank">
