@@ -10,6 +10,9 @@
         body {
             margin: 0;
             min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
 
             background-image:
                 linear-gradient(rgba(10, 10, 20, 0.55),
@@ -19,13 +22,9 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-
-            font-family: Arial, sans-serif;
-            color: white;
         }
 
         .container {
-            text-align: center;
             padding-top: 70px;
         }
 
@@ -37,15 +36,11 @@
             font-size: 20px;
         }
 
-        .buttons {
-            margin-top: 30px;
-        }
-
         .button {
-            display: block;
+            display: inline-block;
             width: 260px;
-            margin: 12px auto;
-            padding: 16px;
+            padding: 18px;
+            margin: 15px;
 
             background: #5366d8;
             color: white;
@@ -60,42 +55,17 @@
             background: #6d7eff;
         }
 
-        .apply {
-            position: fixed;
-            left: 20px;
-            bottom: 20px;
-        }
-
-        .apply a {
+        .youtube-button {
             display: block;
-            padding: 16px 25px;
-
-            background: #5366d8;
-            color: white;
-
-            text-decoration: none;
-            border-radius: 12px;
-
-            font-size: 18px;
+            margin: 30px auto;
         }
 
-        .donate {
-            position: fixed;
-            right: 20px;
-            top: 245px;
-        }
-
-        .donate a {
-            display: block;
-            padding: 16px 25px;
-
-            background: #5366d8;
-            color: white;
-
-            text-decoration: none;
-            border-radius: 12px;
-
-            font-size: 18px;
+        .buttons-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -108,37 +78,35 @@
 
         <p>Вы попали на сайт Art_Vedio_2017_15</p>
 
-    
+        <h2>Канал Art_Vedio_2017_15</h2>
 
         <p>
             Вы сможете продвинуть Art_Vedio,
             если подадите заявку на сотрудничество.
         </p>
 
-        <div class="buttons">
+        <a class="button youtube-button"
+           href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
+           target="_blank">
+            ▶️ Art_Vedio_2017_15
+        </a>
+
+        <div class="buttons-row">
 
             <a class="button"
-               href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
+               href="https://discord.gg/RGjsDS7Ra"
                target="_blank">
-                ▶️ Art_Vedio_2017_15
+                🤝 Подать заявку
+            </a>
+
+            <a class="button"
+               href="https://www.donationalerts.com/r/art9vedio9official"
+               target="_blank">
+                💰 Пожертвовать
             </a>
 
         </div>
 
-    </div>
-
-    <div class="donate">
-        <a href="https://www.donationalerts.com/r/art9vedio9official"
-           target="_blank">
-            💰 Пожертвовать
-        </a>
-    </div>
-
-    <div class="apply">
-        <a href="https://discord.gg/RGjsDS7Ra"
-           target="_blank">
-            🤝 Подать заявку
-        </a>
     </div>
 
 </body>
