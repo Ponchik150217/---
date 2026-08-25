@@ -46,7 +46,7 @@
 
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             text-align: center;
             padding: 70px 20px;
@@ -59,15 +59,8 @@
 
         p {
             font-size: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #d8d8e8;
-        }
-
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
         }
 
         .button {
@@ -78,6 +71,7 @@
             text-decoration: none;
             color: white;
             font-size: 18px;
+            text-align: center;
             background: linear-gradient(135deg, #4e5bd5, #7b3fe4);
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
             transition: 0.3s;
@@ -88,25 +82,39 @@
             box-shadow: 0 10px 30px rgba(100, 80, 255, 0.5);
         }
 
-        .donate {
-            background: linear-gradient(135deg, #c97800, #e69b00);
+        /* Кнопка YouTube */
+        .youtube {
+            margin-top: 10px;
         }
 
+        /* Контейнер для двух нижних кнопок */
+        .lower-buttons {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            height: 160px;
+            margin: 10px auto 0;
+        }
+
+        /* Заявка — левее */
         .apply {
+            position: absolute;
+            left: 0;
+            top: 55px;
+
             background: linear-gradient(135deg, #16844a, #24b867);
         }
 
-        .bottom-left {
-            position: fixed;
-            left: 20px;
-            bottom: 20px;
+        /* Пожертвовать — выше и правее */
+        .donate {
+            position: absolute;
+            right: 0;
+            top: 5px;
+
+            background: linear-gradient(135deg, #c97800, #e69b00);
         }
 
-        .bottom-left .button {
-            width: auto;
-        }
-
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
             h1 {
                 font-size: 32px;
             }
@@ -115,7 +123,17 @@
                 font-size: 17px;
             }
 
-            .button {
+            .lower-buttons {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .apply,
+            .donate {
+                position: static;
                 width: 100%;
                 max-width: 280px;
             }
@@ -129,24 +147,33 @@
 
         <h1>Здравствуйте!</h1>
 
-        <p>
-            Вы попали на сайт Art_Vedio_2017_15
-        </p>
+        <p>Вы попали на сайт Art_Vedio_2017_15</p>
 
         <p>
             Вы сможете продвинуть Art_Vedio, если подадите заявку на сотрудничество.
         </p>
 
-        <div class="buttons">
+        <!-- YouTube -->
+        <a
+            href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
+            class="button youtube"
+            target="_blank"
+        >
+            ▶ Art_Vedio_2017_15
+        </a>
 
+        <div class="lower-buttons">
+
+            <!-- Заявка слева -->
             <a
-                href="https://youtube.com/channel/UCfc06WWWemdGtQDNxkW9zLQ?si=WSzg9uelOq-6YK7S"
-                class="button"
+                href="https://discord.gg/RGjsDS7Ra"
+                class="button apply"
                 target="_blank"
             >
-                ▶ Art_Vedio_2017_15
+                🤝 Подать заявку на сотрудничество
             </a>
 
+            <!-- Пожертвование выше и справа -->
             <a
                 href="https://www.donationalerts.com/r/art9vedio9official"
                 class="button donate"
@@ -156,18 +183,6 @@
             </a>
 
         </div>
-
-    </div>
-
-    <div class="bottom-left">
-
-        <a
-            href="https://discord.gg/RGjsDS7Ra"
-            class="button apply"
-            target="_blank"
-        >
-            🤝 Подать заявку на сотрудничество
-        </a>
 
     </div>
 
